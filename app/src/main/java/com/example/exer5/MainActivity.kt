@@ -49,10 +49,21 @@ class MainActivity : AppCompatActivity() {
     private fun addDetails(view: View) {
         // binding versions, hide form and show only the result
         binding.apply {
+
+            //edit text to the end labels
             myName?.name = nameEdit.text.toString()
             nameLabel.text = myName?.name
             nameLabel.visibility = View.VISIBLE
 
+            myName?.nickname = nicknameEdit.text.toString()
+            nicknameLabel.text = myName?.nickname
+            nicknameLabel.visibility = View.VISIBLE
+
+            myName?.age = ageEdit.text.toString()
+            ageLabel.text = myName?.age
+            ageLabel.visibility = View.VISIBLE
+
+            //visibility
             helloGuide.visibility = View.GONE
             nameGuide.visibility = View.GONE
             nicknameGuide.visibility = View.GONE
