@@ -14,11 +14,29 @@ import com.example.exer5.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val myName: MyName = MyName("Aleks Haecky")
+    private val myGuides: MyGuides = MyGuides()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.myName = myName
+        binding.myGuides = myGuides
+
+        //hardcoded strings for the "guides"
+        binding.apply {
+            helloGuide.text = myGuides?.hello
+            nameGuide.text = myGuides?.name
+            nicknameGuide.text = myGuides?.nickname
+            ageGuide.text = myGuides?.age
+            birthdayGuide.text = myGuides?.birthday
+            phoneGuide.text = myGuides?.phone
+            colorGuide.text = myGuides?.color
+            dreamGuide.text = myGuides?.dream
+            courseGuide.text = myGuides?.course
+            crushGuide.text = myGuides?.crush
+            messageGuide.text = myGuides?.message
+            doneButton.text = myGuides?.done
+        }
 
         binding.nameEdit.setOnClickListener {
             updateName(it)
@@ -29,12 +47,34 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addDetails(view: View) {
-        // binding versions
+        // binding versions, hide form and show only the result
         binding.apply {
             myName?.name = nameEdit.text.toString()
             nameLabel.text = myName?.name
             nameLabel.visibility = View.VISIBLE
-            nameEdit.visibility = View.INVISIBLE
+
+            helloGuide.visibility = View.GONE
+            nameGuide.visibility = View.GONE
+            nicknameGuide.visibility = View.GONE
+            ageGuide.visibility = View.GONE
+            birthdayGuide.visibility = View.GONE
+            phoneGuide.visibility = View.GONE
+            colorGuide.visibility = View.GONE
+            dreamGuide.visibility = View.GONE
+            courseGuide.visibility = View.GONE
+            crushGuide.visibility = View.GONE
+            messageGuide.visibility = View.GONE
+
+            nameEdit.visibility = View.GONE
+            nicknameEdit.visibility = View.GONE
+            ageEdit.visibility = View.GONE
+            birthdayEdit.visibility = View.GONE
+            phoneEdit.visibility = View.GONE
+            colorEdit.visibility = View.GONE
+            dreamEdit.visibility = View.GONE
+            courseEdit.visibility = View.GONE
+            crushEdit.visibility = View.GONE
+            messageEdit.visibility = View.GONE
             view.visibility = View.GONE
         }
 
@@ -44,13 +84,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //focus phone to the text
     private fun updateName(view: View) {
-        // binding versions
-        binding.apply {
-            doneButton.visibility = View.VISIBLE
-            view.visibility = View.VISIBLE
-            view.requestFocus()
-        }
+        view.requestFocus()
         // Show the keyboard.
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.showSoftInput(view, 0)

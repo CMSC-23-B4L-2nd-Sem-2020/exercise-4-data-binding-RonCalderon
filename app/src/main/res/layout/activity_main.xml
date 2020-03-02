@@ -5,6 +5,9 @@
         <variable
             name="myName"
             type="com.example.exer5.MyName" />
+        <variable
+            name="myGuides"
+            type="com.example.exer5.MyGuides" />
     </data>
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,14 +39,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Hello!"
                     android:textSize="36sp" />
 
                 <TextView
                     android:id="@+id/name_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Name "
                     android:textSize="30sp" />
 
                 <EditText
@@ -51,15 +52,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter name here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/nickname_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nickname"
                     android:textSize="30sp" />
 
                 <EditText
@@ -67,15 +65,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter nickname here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/age_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Age"
                     android:textSize="30sp" />
 
                 <EditText
@@ -83,15 +78,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter age here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/birthday_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="When is your birthday?"
                     android:textSize="30sp" />
 
                 <EditText
@@ -99,15 +91,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter birthday here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/phone_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Phone Number"
                     android:textSize="30sp" />
 
                 <EditText
@@ -115,31 +104,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter phone number here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="phone" />
 
                 <TextView
-                    android:id="@+id/email_guide"
+                    android:id="@+id/color_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your email address?"
                     android:textSize="30sp" />
 
                 <EditText
-                    android:id="@+id/email_edit"
+                    android:id="@+id/color_edit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter email address here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/course_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your course? "
                     android:textSize="30sp" />
 
                 <EditText
@@ -147,15 +130,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter course here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/dream_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What is your dream?"
                     android:textSize="30sp" />
 
                 <EditText
@@ -163,15 +143,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter dream here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/crush_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Who is your ultimate crush?"
                     android:textSize="30sp" />
 
                 <EditText
@@ -179,15 +156,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter name of crush here."
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textPersonName" />
 
                 <TextView
                     android:id="@+id/message_guide"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Name  your message for me?"
                     android:textSize="30sp" />
 
                 <EditText
@@ -195,14 +169,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:textColor="@android:color/darker_gray" />
+                    android:inputType="textMultiLine" />
 
                 <Button
                     android:id="@+id/done_button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Done" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
         </ScrollView>
 
