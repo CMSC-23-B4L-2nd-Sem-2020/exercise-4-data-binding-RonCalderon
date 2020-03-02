@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
             crushGuide.text = myGuides?.crush
             messageGuide.text = myGuides?.message
             doneButton.text = myGuides?.done
+            endLabel.text = myGuides?.end
         }
 
         binding.nameEdit.setOnClickListener {
@@ -87,6 +88,7 @@ class MainActivity : AppCompatActivity() {
             crushEdit.visibility = View.GONE
             messageEdit.visibility = View.GONE
             view.visibility = View.GONE
+            endLabel.visibility = View.VISIBLE
         }
 
         // Hide the keyboard.

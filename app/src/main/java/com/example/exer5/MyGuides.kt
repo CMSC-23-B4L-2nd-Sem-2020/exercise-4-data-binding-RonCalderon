@@ -1,3 +1,4 @@
 package com.example.exer5
 
-data class MyGuides(var hello: String = "Hello!",var name: String = "Name", var nickname: String = "Nickname",var age: String = "Age",var birthday: String = "When is your birthday?",var phone: String = "Phone Number",var color: String = "What is your favorite color?",var course: String = "What is your course?",var dream: String = "What is your dream?",var crush: String = "Who is your ultimate crush?",var message: String = "What is your message for me?", var done: String = "Done")
+//THIS CLASS IS FOR THE "GUIDES" above each field
+data class MyGuides(var hello: String = "Hello!",var name: String = "Name", var nickname: String = "Nickname",var age: String = "Age",var birthday: String = "When is your birthday?",var phone: String = "Phone Number",var color: String = "What is your favorite color?",var course: String = "What is your course?",var dream: String = "What is your dream?",var crush: String = "Who is your ultimate crush?",var message: String = "What is your message for me?", var done: String = "Done", var end: String = "Thank you for answering!")
